@@ -1,4 +1,9 @@
 <?php
+
+// Date: 05 march 2021
+// This is the script for extract data and update to the data base from the unit
+
+// incluse database handler
 include_once '../includes/dbh.php';
 
 // get mac address of the client

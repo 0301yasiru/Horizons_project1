@@ -1,3 +1,7 @@
+-- Date: 5th march 2021
+-- This is the mysql script for create tables for the horizonsp1 database
+
+-- Create table to store user information
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users`(
 	`id` int(13) NOT NULL PRIMARY KEY,
@@ -10,6 +14,7 @@ CREATE TABLE `users`(
     `city` text NOT NULL
 );
 
+-- Create table to store consumption data
 DROP TABLE IF EXISTS `consumption`;
 CREATE TABLE `consumption`(
     `index` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
