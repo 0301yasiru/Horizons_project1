@@ -6,12 +6,10 @@
 // incluse database handler
 include_once '../includes/dbh.php';
 
-// get mac address of the client
-$MAC = exec('getmac'); 
-$MAC = strtok($MAC, ' '); 
+$IDN = $_GET['idn'];
 
 // search the data base to authenticate the user
-$sql_querry = "SELECT * FROM `users` WHERE `mac`= '$MAC'";
+$sql_querry = "SELECT * FROM `users` WHERE `idn`= '$IDN'";
 $result = mysqli_query($conn, $sql_querry);
 $result_check = mysqli_num_rows($result);
 
@@ -23,10 +21,18 @@ if ($result_check > 0){
 
     //read consumption from get data
     $consumption = $_GET['consumption'];
+    $date = $_GET['date'];
 
     //insert data to the database
-    $sql_querry = "INSERT INTO `consumption`(`id`, `year`, `month`, `date`, `consumption`) VALUES ($id, 2021, 03, 05, $consumption)";
+    $sql_querry = "INSERT INTO `consumption`(`id`, `date`, `consumption`) VALUES ($id, $date, $consumption)";
     mysqli_query($conn, $sql_querry);
+
+    echo $consumption;
 }//end of result check if statement
+
+else{
+    echo "You are not in the data base";
+    echo "Your identity address is ".$IDN;
+}
 
 ?>
