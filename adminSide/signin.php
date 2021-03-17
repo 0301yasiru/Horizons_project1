@@ -57,7 +57,7 @@
                         mysqli_stmt_bind_param($stmt, "sss", $name, $uname, $hashed);
                         mysqli_stmt_execute($stmt);
                         
-                        header('Location: signin_page.php?result=success');
+                        header('Location: login_page.php');
                         exit();
                     }
                 }

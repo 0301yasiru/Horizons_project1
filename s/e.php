@@ -6,7 +6,7 @@
 // incluse database handler
 include_once '../includes/dbh.php';
 
-$IDN = $_GET['idn'];
+$IDN = $_GET['i'];
 
 // search the data base to authenticate the user
 $sql_querry = "SELECT * FROM `users` WHERE `idn`= '$IDN'";
@@ -20,8 +20,8 @@ if ($result_check > 0){
     $id = $row['id'];
 
     //read consumption from get data
-    $consumption = $_GET['consumption'];
-    $date = $_GET['date'];
+    $consumption = $_GET['c'];
+    $date = $_GET['d'];
 
     //insert data to the database
     $sql_querry = "INSERT INTO `consumption`(`id`, `date`, `consumption`) VALUES ($id, $date, $consumption)";

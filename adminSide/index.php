@@ -25,42 +25,31 @@
 
   <body>
     
-    <?php include_once "header.php";?>
+    <?php 
+    $_SESSION['active'] = 'home';
+    include_once "header.php";
+    ?>
 
 
 
-    <table class="table mt-5" style="max-width: 1000px; margin:auto;">
-        <thead class="table-dark">
-        <tr> <th>ID</th> <th>Name</th> <th>Address</th> <th>Date</th> <th>Consumtion</th> </tr>
-        </thead>
-        
-        <?php
+    <div class = 'text-center mt-5'>
+      <h1 class = "h3 mt-5"> Puck Off 🤨🤨🤨</h1>
+    </div>
 
-            $sql = "SELECT * FROM consumption";
-            $stmt = mysqli_stmt_init($conn);
-            mysqli_stmt_prepare($stmt, $sql);
-            mysqli_stmt_execute($stmt);
-            $result = mysqli_stmt_get_result($stmt);
+    <div class = 'container'>
+      <div class = 'row'>
+        <div class = 'col-3'></div>
+        <div class = 'col-6'>
+          <hr>
 
-            while($row = mysqli_fetch_assoc($result)){
-                $sql = "SELECT * FROM users WHERE id=?";
-                $stmt = mysqli_stmt_init($conn);
-                mysqli_stmt_prepare($stmt, $sql);
-                mysqli_stmt_bind_param($stmt, "i", $row['id']);
-                mysqli_stmt_execute($stmt);
-                $users = mysqli_stmt_get_result($stmt);
-                $user_data = mysqli_fetch_assoc($users);
+          <p> ආව මෙතන ඇඩ්මින් ඇඩ්මින් ගගා ඇඩ්මින් පේජ් එකට.😒😒😒. මෙතන තිබ්බ පේජ් එක අයින් කරල තියෙන්නෙ🙄. දාන්න මගුලක් මට තාම සෙට් උනෙ නෑ. ඒ නිසා නිකන් හොල්මනක් දැක්ක වගෙ බලන් ඉන්නෙ නැතුව පලයන් User Search එකට. ඒකෙ තමා මෙතන තිබ්බ පේජ් එක තියෙන්නෙ. </p>
+          <p> ඇඩ්මින් පේජ් ඇවිත්🖕. දෙන්නෙ හොම්බ රිවට්ටෙන්න.</p>
+          <p> මීට, සයිට් එකේ පොර 😎</p>
 
-
-                $name = $user_data['fname']." ".$user_data['lname'];
-                $addr = $user_data['home'].", ".$user_data['road'].", ".$user_data['city'];
-                $date = mb_substr($row['date'], 0, 2)."-".mb_substr($row['date'],2, 2)."-".mb_substr($row['date'], 4, 8);
-
-                echo "<tr> <td>".$row['id']."</td> <td>".$name."</td> <td>".$addr."</td> <td>".$date."</td> <td>".$row['consumption']."</td> </tr>";
-            }
-        ?>    
-    
-    </table>
+        </div>
+        <div class = 'col-3'></div>
+      </div>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
