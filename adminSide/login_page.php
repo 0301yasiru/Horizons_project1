@@ -19,8 +19,8 @@
             <img class = "mt-5 mb-4" src="https://iconape.com/wp-content/png_logo_vector/ceylon-electricity-board-logo.png" height = '72px' alt="CEB icon">
             <h1 class = 'h3 mb-3 font-weight-normal'>Admin Till Login</h1>
 
-            <input class = "form-control" type="text" name='tillid' placeholder='Till Name' required autofocus>
-            <input class = "form-control" type="password" name='password' placeholder='Password'>
+            <input class = "form-control mb-1" type="text" name='tillid' placeholder='Till Name'  autocomplete="off" required autofocus>
+            <input class = "form-control mb-1" type="password" name='password' placeholder='Password'  autocomplete="off">
 
             <div class = "mt-3">
                 <button class = 'btn btn-lg btn-primary w-100' type='submit' name='login_submit'>

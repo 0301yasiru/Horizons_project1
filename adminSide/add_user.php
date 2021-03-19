@@ -35,14 +35,14 @@
             <img class = "mt-5 mb-4" src="https://iconape.com/wp-content/png_logo_vector/ceylon-electricity-board-logo.png" height = '72px' alt="CEB icon">
             <h1 class = 'h3 mb-3 font-weight-normal'>Admin User Add</h1>
 
-            <input class = "form-control" type="text" name='name' placeholder='Full Name'>
-            <input class = "form-control" type="number" name='id' placeholder='Account Number'>
-            <input class = "form-control" type="text" name='nic' placeholder='NIC'>
-            <input class = "form-control" type="text" name='idn' placeholder='Device ID'>
-            <input class = "form-control" type="text" name='uname' placeholder='User Name'>
-            <input class = "form-control" type="text" name='home' placeholder='Home Number'>
-            <input class = "form-control" type="text" name='road' placeholder='Road Address'>
-            <input class = "form-control" type="text" name='city' placeholder='City'>
+            <input class = "form-control mb-1" type="text" name='name' placeholder='Full Name'>
+            <input class = "form-control mb-1" type="number" name='id' placeholder='Account Number'>
+            <input class = "form-control mb-1" type="text" name='nic' placeholder='NIC'>
+            <input class = "form-control mb-1" type="text" name='idn' placeholder='Device ID'>
+            <input class = "form-control mb-1" type="text" name='uname' placeholder='User Name'>
+            <input class = "form-control mb-1" type="text" name='home' placeholder='Home Number'>
+            <input class = "form-control mb-1" type="text" name='road' placeholder='Road Address'>
+            <input class = "form-control mb-1" type="text" name='city' placeholder='City'>
 
             <div class = "mt-3">
                 <button class = 'btn btn-lg btn-primary w-100' type='submit' name='login_submit'>

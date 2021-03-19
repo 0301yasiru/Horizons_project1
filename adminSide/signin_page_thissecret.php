@@ -19,10 +19,10 @@
             <img class = "mt-5 mb-4" src="https://iconape.com/wp-content/png_logo_vector/ceylon-electricity-board-logo.png" height = '72px' alt="CEB icon">
             <h1 class = 'h3 mb-3 font-weight-normal'>Admin Till SignIN</h1>
 
-            <input class = "form-control" type="text" name='name' placeholder='Full Name' required autofocus>
-            <input class = "form-control" type="text" name='uname' placeholder='User Name'>
-            <input class = "form-control" type="password" name='password' placeholder='Password'>
-            <input class = "form-control" type="password" name='repassword' placeholder='Re-Password'>
+            <input class = "form-control mb-1" type="text" name='name' placeholder='Full Name' required autofocus>
+            <input class = "form-control mb-1" type="text" name='uname' placeholder='User Name'>
+            <input class = "form-control mb-1" type="password" name='password' placeholder='Password'>
+            <input class = "form-control mb-1" type="password" name='repassword' placeholder='Re-Password'>
 
             <div class = "mt-3">
                 <button class = 'btn btn-lg btn-primary w-100' type='submit' name='login_submit'>
