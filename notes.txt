@@ -7,17 +7,12 @@ http://localhost/hp1/s/e.php?i=&d=&c=
 * For example
 http://localhost/hp1/s/e.php?i=abc111de&d=19032021&c=3
 
+12345678
+124.43.42.225
+http://124.43.42.225/hp1/s/e.php?i=12345678&d=20210320&c=3
 
 
-<?php
-                    $querry = "";
-                    foreach ($_POST as $key => $value) {
-                        if (!empty($value)){
-                            if ($key == 'date') $value = str_replace("-", "", $value);
-                            $querry .= $key."=".$value." and ";
-                        }
-                    }
-                    if (!empty($querry)) $querry = "WHERE ".$querry." 1=1";
-                    echo $querry;
-                
-                ?>
+lakdilu
+=======
+lakdilu    jpNO9stW
+suren Gc4Nf@qm

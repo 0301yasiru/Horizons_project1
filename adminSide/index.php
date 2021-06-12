@@ -18,6 +18,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="..\style\style.css">
+
     <title>Admin</title>
   </head>
 
@@ -31,27 +33,30 @@
     ?>
 
 
-
-    <div class = 'text-center mt-5'>
-      <h1 class = "h3 mt-5"> Puck Off 🤨🤨🤨</h1>
-    </div>
-
     <div class = 'container'>
       <div class = 'row'>
-        <div class = 'col-3'></div>
-        <div class = 'col-6'>
-          <hr>
-
-          <p> ආව මෙතන ඇඩ්මින් ඇඩ්මින් ගගා ඇඩ්මින් පේජ් එකට.😒😒😒. මෙතන තිබ්බ පේජ් එක අයින් කරල තියෙන්නෙ🙄. දාන්න මගුලක් මට තාම සෙට් උනෙ නෑ. ඒ නිසා නිකන් හොල්මනක් දැක්ක වගෙ බලන් ඉන්නෙ නැතුව පලයන් User Search එකට. ඒකෙ තමා මෙතන තිබ්බ පේජ් එක තියෙන්නෙ. </p>
-          <p> ඇඩ්මින් පේජ් ඇවිත්🖕. දෙන්නෙ හොම්බ රිවට්ටෙන්න.</p>
-          <p> මීට, සයිට් එකේ පොර 😎</p>
-
+        <div class = 'text-center mt-2'>
+          <h1 class = "h3 mt-2"> Welcome to Admin Side of CEB</h1>
         </div>
-        <div class = 'col-3'></div>
-      </div>
-    </div>
+      </div> <!--End of the first row-->
 
 
+      <div class = 'row'>
+        <div class = 'col-7'></div>
+        <div class = 'col-5'>
+          <div id = 'map'></div>
+        </div>
+      </div> <!--End of the row two-->
+    </div><!--End of the conatiner-->
+
+
+    <script>
+      function initMap(){
+        var location = {lat:7.045000 ,lng:80.537643};
+        var map = new google.maps.Map(document.getElementById('map'), {zoom:4, center:location});
+      }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6-0zbOsmwHO59DZuRSpEayq36byz8mWA&callback=initMap"type="text/javascript"></script>
   </body>
 </html>
